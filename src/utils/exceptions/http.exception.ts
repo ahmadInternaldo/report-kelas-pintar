@@ -5,7 +5,6 @@ import {
   HttpException,
   HttpStatus,
 } from '@nestjs/common';
-import { Request } from 'express';
 import { FastifyReply, RawServerBase } from 'fastify';
 
 @Catch(HttpException)
