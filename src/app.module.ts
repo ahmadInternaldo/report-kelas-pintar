@@ -18,6 +18,7 @@ import { Report } from './utils/entities/report.entity';
       isGlobal: true,
     }),
     SequelizeModule.forRoot({
+      
       dialect: 'postgres',
       host: process.env.HOST,
       port: +process.env.PORT,
