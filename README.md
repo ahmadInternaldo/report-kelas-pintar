@@ -35,39 +35,76 @@ $ npm install
 ## Running the app
 
 ```bash
-# development
-$ npm run start
-
-# watch mode
+# development mode
 $ npm run start:dev
 
 # production mode
 $ npm run start:prod
 ```
 
-## Test
+# Project: Kelas Pintar
 
-```bash
-# unit tests
-$ npm run test
+## End-point: Login
+### Method: POST
+>```
+>http://localhost:3000/login
+>```
+### Body (**raw**)
 
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+```json
+{
+    "role": "TEACHER",
+    "username": "Malih",
+    "password": "1234567890"
+}
+```
+or 
+```json
+{
+    "role": "STUDENT",
+    "username": "Cleo Gay",
+    "password": "1234567890"
+}
 ```
 
-## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+### 🔑 Authentication basic
 
-## Stay in touch
+|Param|value|Type|
+|---|---|---|
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
 
-## License
 
-Nest is [MIT licensed](LICENSE).
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+## End-point: All Data
+### Method: GET
+>```
+>http://localhost:3000/report/all-data?grade=1
+>note: if you erase the query search, get all data, but only a teacher
+>```
+### Headers
+
+|Content-Type|Value|
+|---|---|
+|authorization|eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY5MWNmOTUxLTg4NWUtNGYyMS05MmNiLWVhNmNiMzNiOWQ3YSIsImlhdCI6MTYzNzUxNjg2NiwiZXhwIjoxNjM3NjAzMjY2fQ.5YoQS3P0NFmwxIHsmN1T_gkppMGKyjEO9tOB0rpfxEk|
+
+
+### Query Params
+
+|Param|value|
+|---|---|
+|grade|1|
+
+
+### 🔑 Authentication noauth
+
+|Param|value|Type|
+|---|---|---|
+
+
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+_________________________________________________
+created By: [ahmad-internaldo](https://github.com/ahmadInternaldo)
+

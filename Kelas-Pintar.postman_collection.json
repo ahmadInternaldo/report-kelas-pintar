@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "783412f3-916a-4095-84a0-32903e238172",
+		"name": "Kelas Pintar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "basic"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"role\": \"TEACHER\",\n    \"username\": \"Malih\",\n    \"password\": \"1234567890\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Data",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImY5MWNmOTUxLTg4NWUtNGYyMS05MmNiLWVhNmNiMzNiOWQ3YSIsImlhdCI6MTYzNzUxNjg2NiwiZXhwIjoxNjM3NjAzMjY2fQ.5YoQS3P0NFmwxIHsmN1T_gkppMGKyjEO9tOB0rpfxEk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/report/all-data?grade=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"report",
+						"all-data"
+					],
+					"query": [
+						{
+							"key": "grade",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
