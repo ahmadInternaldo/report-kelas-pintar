@@ -334,7 +334,6 @@ export class ReportService {
               })
               .slice(0, 3);
             i.rataRataTerendah = grades.gradeOne.underAverage;
-
             break;
           case 2:
             i.topThree = grades.gradeTwo.topThree
@@ -343,7 +342,6 @@ export class ReportService {
               })
               .slice(0, 3);
             i.rataRataTerendah = grades.gradeTwo.underAverage;
-
             break;
           case 3:
             i.topThree = grades.gradeThree.topThree
@@ -352,7 +350,6 @@ export class ReportService {
               })
               .slice(0, 3);
             i.rataRataTerendah = grades.gradeThree.underAverage;
-
             break;
           case 4:
             i.topThree = grades.gradeFour.topThree
@@ -361,7 +358,6 @@ export class ReportService {
               })
               .slice(0, 3);
             i.rataRataTerendah = grades.gradeFour.underAverage;
-
             break;
           case 5:
             i.topThree = grades.gradeFive.topThree
@@ -370,7 +366,6 @@ export class ReportService {
               })
               .slice(0, 3);
             i.rataRataTerendah = grades.gradeFive.underAverage;
-
             break;
           case 6:
             i.topThree = grades.gradeSix.topThree
@@ -379,7 +374,6 @@ export class ReportService {
               })
               .slice(0, 3);
             i.rataRataTerendah = grades.gradeSix.underAverage;
-
             break;
           case 7:
             i.topThree = grades.gradeSeven.topThree
@@ -388,7 +382,6 @@ export class ReportService {
               })
               .slice(0, 3);
             i.rataRataTerendah = grades.gradeSeven.underAverage;
-
             break;
           case 8:
             i.topThree = grades.gradeEight.topThree
@@ -397,7 +390,6 @@ export class ReportService {
               })
               .slice(0, 3);
             i.rataRataTerendah = grades.gradeEight.underAverage;
-
             break;
           case 9:
             i.topThree = grades.gradeNine.topThree
@@ -406,7 +398,6 @@ export class ReportService {
               })
               .slice(0, 3);
             i.rataRataTerendah = grades.gradeNine.underAverage;
-
             break;
           case 10:
             i.topThree = grades.gradeTen.topThree
@@ -415,7 +406,6 @@ export class ReportService {
               })
               .slice(0, 3);
             i.rataRataTerendah = grades.gradeTen.underAverage;
-
             break;
           case 11:
             i.topThree = grades.gradeEleven.topThree
@@ -424,7 +414,6 @@ export class ReportService {
               })
               .slice(0, 3);
             i.rataRataTerendah = grades.gradeEleven.underAverage;
-
             break;
           case 12:
             i.topThree = grades.gradeTwelve.topThree
@@ -433,7 +422,6 @@ export class ReportService {
               })
               .slice(0, 3);
             i.rataRataTerendah = grades.gradeTwelve.underAverage;
-
             break;
           default:
             break;
@@ -441,7 +429,7 @@ export class ReportService {
       }
       if (findUser.role === Roles.STUDENT) {
         const returning = output.find((x) => x.name === findUser.username);
-        return returning
+        return returning;
       }
       return output;
     } catch (error) {
