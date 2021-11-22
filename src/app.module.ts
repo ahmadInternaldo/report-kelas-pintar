@@ -24,7 +24,7 @@ import { Report } from './utils/entities/report.entity';
       username: process.env.USERNAME,
       password: process.env.PASSWORD,
       database: process.env.DATABASE,
-      models: [User, Subject, Chapter, Report]
+      models: [User, Subject, Chapter, Report],
     }),
     LoginModule,
     ReportModule,

@@ -9,7 +9,7 @@
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start:prod": "node dist/main",
+    "start:prod": "npm i -g sequelize-cli && sequelize-cli db:create && sequelize-cli db:migrate && sequelize-cli db:seed:all && nest build && nest start --watch",
     "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "dependencies": {
