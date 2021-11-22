@@ -15,29 +15,23 @@ import { Report } from './utils/entities/report.entity';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      isGlobal: true,
+      isGlobal: true
     }),
     SequelizeModule.forRoot({
-      
       dialect: 'postgres',
       host: process.env.HOST,
       port: +process.env.PORT,
       username: process.env.USERNAME,
       password: process.env.PASSWORD,
       database: process.env.DATABASE,
-      models: [User, Subject, Chapter, Report],
-      // synchronize: true,
-      // sync: {
-      //   alter: true,
-      // },
-      // autoLoadModels: true,
+      models: [User, Subject, Chapter, Report]
     }),
     LoginModule,
     ReportModule,
     JwtAuthModule,
-    JwtModule.register({}),
+    JwtModule.register({})
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService]
 })
 export class AppModule {}
